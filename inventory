@@ -1,4 +1,4 @@
-10.22.111.176 ansible_user=ubuntu
-10.22.111.172 ansible_user=ubuntu
-10.22.111.228 ansible_user=ubuntu
-10.22.111.235 ansible_user=ubuntu
+10.22.111.176 ansible_user=ubuntu apache_package=apache2 php_package=libapache2-mod-php
+10.22.111.172 ansible_user=ubuntu apache_package=apache2 php_package=libapache2-mod-php
+10.22.111.228 ansible_user=ubuntu apache_package=apache2 php_package=libapache2-mod-php
+10.22.111.235 ansible_user=ubuntu apache_package=apache2 php_package=libapache2-mod-php
