@@ -1,0 +1,8 @@
+ansible all -m gather_facts
+ansible all -m apt -a update_cache=true		# this fails
+ansible all -m apt -a update_cache=true --become
+ansible all -m apt -a update_cache=true --become --ask-become-pass	# if there is sudo password
+ansible all -m apt -a name=vim-nox -b
+ansible all -m apt -a name=tmux -b
+ansible all -m apt -a "name=snapd state=latest" -b
+ansible all -m apt -a "upgrade=dist" -b		# dist-upgrade
