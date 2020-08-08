@@ -1,0 +1,1 @@
+ansible all -m gather_facts --limit 10.22.111.235
