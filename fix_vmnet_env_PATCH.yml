@@ -1,0 +1,10 @@
+- name: Fix PATCH variable in vmnet.env
+  hosts: "{{ target }}"
+  become: true
+  tasks:
+    - name: fix PATCH variable in vmnet.env using lineinfile
+      lineinfile:
+        dest: /etc/vmnet.env
+        regexp: '^PATCH='
+        line: PATCH=`ovs-ofctl show $XENBR3 | grep patch | cut -d ' ' -f 2 | cut -d '(' -f 1`
+        backup: true
