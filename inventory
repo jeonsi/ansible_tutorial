@@ -1,5 +1,10 @@
+[TEST1]
 wordpress ansible_host=10.211.55.235 ansible_user=vagrant
+[TEST2]
 10.22.111.176 ansible_user=ubuntu apache_package=apache2 php_package=libapache2-mod-php
 10.22.111.172 ansible_user=ubuntu apache_package=apache2 php_package=libapache2-mod-php
+[TEST1]
 10.22.111.228 ansible_user=ubuntu apache_package=apache2 php_package=libapache2-mod-php
 10.22.111.235 ansible_user=ubuntu apache_package=apache2 php_package=libapache2-mod-php
+[FILES]
+192.168.64.3 ansible_user=ubuntu
